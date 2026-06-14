@@ -1,4 +1,6 @@
-Python implementation of Masters Thesis - A Bayesian Approach to Lag Selection in Higher-Order Stationary Vector Autoregressions 
+# A Bayesian Approach to Lag Selection in Higher-Order Stationary Vector Autoregressions 
+
+Python implementation of Masters Thesis - A Bayesian Approach to Lag Selection in Higher-Order Stationary Vector Autoregressions. The thesis itself is available under [Thesis.pdf](https://github.com/noemisavelkoul/MastersThesis/blob/main/Thesis.pdf). 
 
 ## Setup
 
