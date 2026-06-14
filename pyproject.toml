@@ -1,0 +1,33 @@
+[project]
+name = "master-thesis-py"
+version = "0.1.0"
+description = "Python implementation of Bayesian lag selection experiments for stationary VAR models."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "cmdstanpy>=1.2.5",
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "scipy>=1.12",
+    "seaborn>=0.13",
+    "typer>=0.12",
+]
+
+[project.scripts]
+thesis = "src.cli:app"
+
+[dependency-groups]
+dev = ["pytest>=8.0", "ruff>=0.8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
